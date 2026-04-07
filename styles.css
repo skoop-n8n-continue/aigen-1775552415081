@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary: green;
+    --primary: red;
     --dark: #10181f;
     --light: #ffffff;
     --secondary: #6a7071;
@@ -16,7 +16,7 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--dark);
-    color: green;
+    color: red;
     width: 1920px;
     height: 1080px;
     overflow: hidden;
@@ -80,7 +80,7 @@ body {
 .clock-container p {
     font-size: 32px;
     font-weight: 300;
-    color: green;
+    color: red;
 }
 
 .location-container h2 {
@@ -204,7 +204,7 @@ body {
 .forecast-condition {
     font-size: 16px;
     text-align: center;
-    color: green;
+    color: red;
 }
 
 /* Loading Screen */
