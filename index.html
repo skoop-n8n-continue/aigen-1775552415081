@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css?v=w9a2b5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="app-container">
+        <div class="overlay"></div>
+        <div class="background-image" id="bgImage"></div>
+
+        <main class="content">
+            <div class="top-row">
+                <div class="clock-container">
+                    <h1 id="clockTime">00:00</h1>
+                    <p id="clockDate">Monday, April 7, 2026</p>
+                </div>
+                <div class="location-container">
+                    <h2 id="locationName">Current Location</h2>
+                </div>
+            </div>
+
+            <div class="middle-row">
+                <div class="main-weather">
+                    <div class="temp-container">
+                        <span id="currentTemp">--</span><span class="unit">°C</span>
+                    </div>
+                    <div class="weather-description">
+                        <span id="weatherCondition">Loading...</span>
+                    </div>
+                </div>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span class="label">Humidity</span>
+                        <span class="value" id="humidityValue">--%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Wind Speed</span>
+                        <span class="value" id="windValue">-- km/h</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Precipitation</span>
+                        <span class="value" id="precipValue">-- mm</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Feels Like</span>
+                        <span class="value" id="feelsLikeValue">--°C</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-row">
+                <div class="forecast-container" id="forecastList">
+                    <!-- Forecast items will be injected here -->
+                </div>
+            </div>
+        </main>
+
+        <div class="loading-screen" id="loadingScreen">
+            <div class="loader"></div>
+            <p>Fetching weather data...</p>
+        </div>
+    </div>
+    <script src="script.js?v=w9a2b5"></script>
+</body>
+</html>
